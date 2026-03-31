@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+@layer base {
+  :root {
+    --background: 42 33% 95%;
+    --foreground: 30 10% 15%;
+
+    --card: 42 40% 97%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 10% 15%;
+
+    --primary: 42 80% 55%;
+    --primary-foreground: 30 10% 10%;
+
+    --secondary: 42 25% 90%;
+    --secondary-foreground: 30 10% 20%;
+
+    --muted: 42 20% 92%;
+    --muted-foreground: 30 8% 45%;
+
+    --accent: 42 60% 70%;
+    --accent-foreground: 30 10% 10%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 145 60% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 90% 55%;
+    --warning-foreground: 30 10% 10%;
+
+    --info: 210 70% 55%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 42 25% 88%;
+    --input: 42 25% 88%;
+    --ring: 42 80% 55%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 30 10% 15%;
+    --sidebar-foreground: 42 20% 90%;
+    --sidebar-primary: 42 80% 55%;
+    --sidebar-primary-foreground: 30 10% 10%;
+    --sidebar-accent: 30 10% 22%;
+    --sidebar-accent-foreground: 42 20% 90%;
+    --sidebar-border: 30 10% 25%;
+    --sidebar-ring: 42 80% 55%;
+
+    --chart-blue: 210 70% 55%;
+    --chart-green: 145 60% 40%;
+    --chart-red: 0 72% 55%;
+
+    --glass: 0 0% 100% / 0.6;
+    --glass-border: 0 0% 100% / 0.3;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'DM Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: hsla(var(--glass));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsla(var(--glass-border));
+  }
+
+  .glass-strong {
+    background: hsla(0, 0%, 100%, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsla(0, 0%, 100%, 0.4);
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px -8px hsla(var(--foreground) / 0.12);
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+  .hover-glow:hover {
+    box-shadow: 0 0 20px hsla(var(--primary) / 0.25);
+  }
+}
+
+/* Scroll animation */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.stagger-children > .scroll-animate:nth-child(1) { transition-delay: 0ms; }
+.stagger-children > .scroll-animate:nth-child(2) { transition-delay: 80ms; }
+.stagger-children > .scroll-animate:nth-child(3) { transition-delay: 160ms; }
+.stagger-children > .scroll-animate:nth-child(4) { transition-delay: 240ms; }
+.stagger-children > .scroll-animate:nth-child(5) { transition-delay: 320ms; }
+.stagger-children > .scroll-animate:nth-child(6) { transition-delay: 400ms; }

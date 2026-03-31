@@ -1,0 +1,7 @@
+[
+  { "id": "ad_001", "campaignId": 1, "impressions": 52000, "clicks": 1300, "spend": 2800 },
+  { "id": "ad_002", "campaignId": 2, "impressions": 80000, "clicks": 900,  "spend": 7200 },
+  { "id": "ad_003", "campaignId": 3, "impressions": 21000, "clicks": 540,  "spend": 1100 },
+  { "id": "ad_004", "campaignId": 4, "impressions": 63000, "clicks": 2100, "spend": 3900 },
+  { "id": "ad_005", "campaignId": 5, "impressions": 95000, "clicks": 3800, "spend": 9500 }
+]

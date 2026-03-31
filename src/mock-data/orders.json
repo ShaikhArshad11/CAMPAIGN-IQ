@@ -1,0 +1,12 @@
+[
+  { "id": "ord_001", "email": "alice@example.com",  "phone": null,             "revenue": 2500 },
+  { "id": "ord_002", "email": "bob@example.com",    "phone": null,             "revenue": 1800 },
+  { "id": "ord_003", "email": null,                 "phone": "+91-9876543210", "revenue": 4200 },
+  { "id": "ord_004", "email": "carol@example.com",  "phone": null,             "revenue": 3100 },
+  { "id": "ord_005", "email": "dave@example.com",   "phone": null,             "revenue": 900  },
+  { "id": "ord_006", "email": null,                 "phone": "+91-9123456780", "revenue": 5500 },
+  { "id": "ord_007", "email": "eve@example.com",    "phone": null,             "revenue": 2200 },
+  { "id": "ord_008", "email": "frank@example.com",  "phone": null,             "revenue": 7800 },
+  { "id": "ord_009", "email": null,                 "phone": "+91-9001234567", "revenue": 3300 },
+  { "id": "ord_010", "email": "ghost@example.com",  "phone": null,             "revenue": 1500 }
+]

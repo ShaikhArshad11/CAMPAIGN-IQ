@@ -1,0 +1,11 @@
+[
+  { "id": "lead_001", "campaignId": 1, "email": "alice@example.com",  "phone": null },
+  { "id": "lead_002", "campaignId": 1, "email": "bob@example.com",    "phone": null },
+  { "id": "lead_003", "campaignId": 2, "email": null,                 "phone": "+91-9876543210" },
+  { "id": "lead_004", "campaignId": 2, "email": "carol@example.com",  "phone": null },
+  { "id": "lead_005", "campaignId": 3, "email": "dave@example.com",   "phone": null },
+  { "id": "lead_006", "campaignId": 4, "email": null,                 "phone": "+91-9123456780" },
+  { "id": "lead_007", "campaignId": 4, "email": "eve@example.com",    "phone": null },
+  { "id": "lead_008", "campaignId": 5, "email": "frank@example.com",  "phone": null },
+  { "id": "lead_009", "campaignId": 5, "email": null,                 "phone": "+91-9001234567" }
+]
